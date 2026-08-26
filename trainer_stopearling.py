@@ -345,7 +345,7 @@ class BaseTrainer:
             self.plot_idx.extend([base_idx, base_idx + 1, base_idx + 2])
         epoch = self.start_epoch
         self.optimizer.zero_grad()  # zero any resumed gradients to ensure stability on train start
-        #_________________________________________________*********
+        #________________New Section_________________________*********
         patience = self.args.patience
         best_fitness = float('-inf')
         epochs_without_improvement = 0
@@ -448,23 +448,23 @@ class BaseTrainer:
                     self.stop |= (time.time() - self.train_time_start) > (self.args.time * 3600)
                 """
                 #_____________________________________________________________
-                # Validación y detención temprana
+                # Validation and Early Detection
                 if self.args.val or final_epoch or epochs_without_improvement >= patience:
                     self.metrics, self.fitness = self.validate()
 
-                # Comprobamos si ha habido mejora
+                # We check to see if there has been any improvement
                 if self.fitness > best_fitness:
                     best_fitness = self.fitness
                     epochs_without_improvement = 0
                 else:
                     epochs_without_improvement += 1
 
-                # Guardamos los resultados
+                # We save the results
                 self.save_metrics(metrics={**self.label_loss_items(self.tloss), **self.metrics, **self.lr})
 
-                # Comprobamos si debemos parar el entrenamiento
+                # We check to see if we should stop the workout
                 if epochs_without_improvement >= patience:
-                    LOGGER.info(f"Entrenamiento detenido por convergencia después de {epoch + 1} épocas.")
+                    LOGGER.info(f"Training stopped due to convergence after {epoch + 1} epochs.")
                     break
                 #_____________________________________________________________________
                 # Save model
