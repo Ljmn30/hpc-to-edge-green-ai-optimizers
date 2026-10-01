@@ -38,7 +38,7 @@ The experimental framework comprises **120 replicated training executions**, wit
 
 The overall experimental workflow includes dataset preparation, optimizer-based training, convergence analysis, statistical evaluation, and deployment benchmarking.
 
-<img src="figure/workflow_1.pdf" alt="bench 1" width="100%">
+<img src="figure/workflow_1.png" alt="bench 1" width="100%">
 
 Suggested caption:
 
