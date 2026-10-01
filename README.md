@@ -251,6 +251,17 @@ where \(E\) is the estimated energy expenditure in kWh.
 
 ### Resource utilization and convergence
 
+<table>
+  <tr>
+    <td><img src="figure/fig6a_gpu_hours.png" alt="prediction 1" width="100%"></td>
+    <td><img src="figure/fig6b_energy.png" alt="prediction 2" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="figure/fig6c_energy.png" alt="prediction 3" width="100%"></td>
+    <td><img src="figure/fig6d_energy.png" alt="prediction 4" width="100%"></td>
+  </tr>
+</table>
+
 **Figure placeholder:** `FIGURE_05_RESOURCE_UTILIZATION.png`
 
 The figure should contain the four panels used in the study:
@@ -266,9 +277,7 @@ Suggested caption:
 
 ### Green AI efficiency
 
-**Figure placeholder:** `FIGURE_06_GREEN_AI_EFFICIENCY.png`
-
-Suggested caption:
+<img src="figure/figure7_green_ai_ranking.png" alt="bench 3" width="100%">
 
 > *Green AI efficiency based on the energy-normalized predictive performance (mAP50/kWh).*
 
