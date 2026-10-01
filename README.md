@@ -10,7 +10,7 @@ The study investigates the role of first-order optimization algorithms across th
 
 Five optimizers are evaluated:
 
-- **SGD** — Stochastic Gradient Descent
+- **SGD** 
 - **Adam**
 - **NAdam**
 - **RAdam**
@@ -38,7 +38,7 @@ The experimental framework comprises **120 replicated training executions**, wit
 
 The overall experimental workflow includes dataset preparation, optimizer-based training, convergence analysis, statistical evaluation, and deployment benchmarking.
 
-**Figure placeholder:** `FIGURE_01_WORKFLOW.png`
+<img src="figure/workflow_1.pdf" alt="bench 1" width="100%">
 
 Suggested caption:
 
