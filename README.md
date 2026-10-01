@@ -4,7 +4,7 @@
 
 This repository contains the experimental material and results associated with the study:
 
-> **Optimizing the HPC-to-Edge Continuum: The Role of First-Order Optimizers in Green AI Training and Real-Time Deep Learning Inference**
+# **Optimizing the HPC-to-Edge Continuum: The Role of First-Order Optimizers in Green AI Training and Real-Time Deep Learning Inference**
 
 The study investigates the role of first-order optimization algorithms across the deep learning lifecycle, from HPC-based training to deployment on GPU and edge-computing platforms. The experimental analysis uses YOLO-based object detection for a maritime/USV scenario and evaluates predictive performance, convergence behaviour, computational cost, energy efficiency, and inference performance.
 
