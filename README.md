@@ -235,7 +235,7 @@ The replicated training analysis considers:
 
 Energy consumption was estimated from the nominal GPU thermal design power (TDP) and measured training duration. Therefore, the reported energy values should be interpreted as **comparative estimates**, not direct measurements of complete system-level electricity consumption.
 
-The primary Green AI efficiency indicator is:
+These two metrics were used to measure the efficiency of Green AI:
 
 ```math
 \mathrm{mAP}_{50}^{\mathrm{GPU\text{-}hour}}
@@ -389,16 +389,9 @@ The deployment analysis considers:
 
 The operational score used in the study is:
 
-\[
-\mathrm{Score}
-=
-100 -
-\left[
-W\frac{E}{N}
-+
-(1-W)(100-A)
-\right]
-\]
+```math
+        \mathrm{Score} = 100 - \left(W \cdot \left(\frac{E}{N}\right) + (1 - W) \cdot (100 - A)\right)
+```
 
 with:
 
