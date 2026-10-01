@@ -253,25 +253,42 @@ where \(E\) is the estimated energy expenditure in kWh.
 
 <table>
   <tr>
-    <td><img src="figure/fig6a_gpu_hours.png" alt="prediction 1" width="100%"></td>
-    <td><img src="figure/fig6b_energy.png" alt="prediction 2" width="100%"></td>
+    <td align="center">
+      <figure>
+        <img src="figure/fig6a_gpu_hours.png"
+             alt="GPU-hours consumed"
+             width="100%">
+        <figcaption><strong>(a)</strong> GPU-hours consumed</figcaption>
+      </figure>
+    </td>
+    <td align="center">
+      <figure>
+        <img src="figure/fig6b_energy.png"
+             alt="Estimated energy consumption"
+             width="100%">
+        <figcaption><strong>(b)</strong> Estimated energy consumption</figcaption>
+      </figure>
+    </td>
   </tr>
   <tr>
-    <td><img src="figure/fig6c_energy.png" alt="prediction 3" width="100%"></td>
-    <td><img src="figure/fig6d_energy.png" alt="prediction 4" width="100%"></td>
+    <td align="center">
+      <figure>
+        <img src="figure/fig6c_energy.png"
+             alt="Convergence epochs"
+             width="100%">
+        <figcaption><strong>(c)</strong> Convergence epochs</figcaption>
+      </figure>
+    </td>
+    <td align="center">
+      <figure>
+        <img src="figure/fig6d_energy.png"
+             alt="Accuracy–energy for all optimizer-GPU configurations"
+             width="100%">
+        <figcaption><strong>(d)</strong> Accuracy–energy for all optimizer–GPU configurations</figcaption>
+      </figure>
+    </td>
   </tr>
 </table>
-
-**Figure placeholder:** `FIGURE_05_RESOURCE_UTILIZATION.png`
-
-The figure should contain the four panels used in the study:
-
-1. GPU-hours consumed
-2. Estimated energy consumption
-3. Convergence epochs
-4. Accuracy–energy relationship / Pareto analysis
-
-Suggested caption:
 
 > *Resource utilization and convergence behaviour across the 120 replicated training executions.*
 
