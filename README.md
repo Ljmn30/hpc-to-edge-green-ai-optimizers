@@ -440,104 +440,32 @@ yolo detect train \
 
 For inference benchmarking, use the corresponding Ultralytics and TensorRT commands/configuration described in the experimental setup.
 
-> **Note:** Hardware-dependent measurements such as training time, power, FPS and FPS/W are expected to vary with GPU model, driver versions, CUDA/TensorRT versions, background system load and measurement methodology.
 
 ---
 
-## 15. Repository Structure
-
-A suggested repository organization is:
-
-```text
-hpc-to-edge-green-ai-optimizers/
-│
-├── README.md
-├── LICENSE
-├── requirements.txt
-│
-├── data/
-│   └── README.md
-│
-├── models/
-│   ├── yolov8n/
-│   └── yolo12n/
-│
-├── training/
-│   ├── scripts/
-│   └── configs/
-│
-├── inference/
-│   ├── tensorrt/
-│   └── benchmarks/
-│
-├── results/
-│   ├── tables/
-│   ├── statistics/
-│   └── figures/
-│
-├── figures/
-│   ├── FIGURE_01_WORKFLOW.png
-│   ├── FIGURE_02_DATASET_CLASS_DISTRIBUTION.png
-│   ├── FIGURE_03_OPTIMIZER_PERFORMANCE.png
-│   ├── FIGURE_04_LOSS_CURVES.png
-│   ├── FIGURE_05_RESOURCE_UTILIZATION.png
-│   └── FIGURE_06_GREEN_AI_EFFICIENCY.png
-│
-└── scripts/
-    ├── training/
-    ├── evaluation/
-    └── analysis/
-```
-
-The exact directory structure can be adapted to the files included in the repository.
-
----
-
-## 16. Publications
+## 15. Publications
 
 The experimental work is associated with the manuscript:
 
-> **Optimizing the HPC-to-Edge Continuum: The Role of First-Order Optimizers in Green AI Training and Real-Time Deep Learning Inference**
+> **In process: Optimizing the HPC-to-Edge Continuum: The Role of First-Order Optimizers in Green AI Training and Real-Time Deep Learning Inference**
 
-The manuscript investigates optimizer selection across the HPC-to-edge AI lifecycle, combining predictive performance, statistical analysis, computational efficiency, energy-aware metrics and edge deployment benchmarks.
 
----
-
-## 17. Limitations
-
-The study identifies several limitations that should be considered when interpreting the results:
-
-1. Training experiments were performed on a limited set of GPU architectures.
-2. The energy values during training are estimates derived from nominal TDP and training duration rather than direct measurements of total system electricity consumption.
-3. The optimizer × GPU interaction analysis has limited statistical power under the current replication design.
-4. Edge inference measurements were performed under a specific TensorRT/FP32 configuration.
-5. The conclusions are based on the evaluated YOLO architectures and maritime object-detection dataset and should not automatically be generalized to other models, tasks or datasets.
 
 ---
 
-## 18. Future Research
-
-The study identifies three principal directions for future work:
-
-- **Distributed HPC training:** extend the framework to data-parallel and model-parallel multi-node configurations.
-- **Post-training quantization:** investigate the interaction between optimizer choice and FP16/INT8 quantization.
-- **Training configuration sensitivity:** evaluate the effects of early-stopping patience, learning-rate schedules and batch size on resource efficiency and workload planning.
-
----
-
-## 19. Acknowledgements
+## 16. Acknowledgements
 
 J.L.M. acknowledges the **National Secretariat of Science, Technology and Innovation (SENACYT) of Panama** for financial support during the completion of his PhD.
 
 ---
 
-## 20. Funding
+## 17. Funding
 
 This work has been partially funded by the European Union (FEDER), the Spanish MINECO under grants **PID2021-126576NB-I00** and **PID2024-158311NB-I00**, funded by MCIN/AEI/10.13039/501100011033, and by the European Union through **ERDF – A way of making Europe** and **NextGenerationEU/PRT**.
 
 ---
 
-## 21. Data Availability
+## 18. Data Availability
 
 The information and files used in this study are publicly available through this GitHub repository:
 
@@ -548,17 +476,3 @@ The Datasense@CRAS dataset used for the maritime object-detection experiments is
 https://rdm.inesctec.pt/lv/dataset/nis-2022-001
 
 ---
-
-## 22. Citation
-
-If you use this repository or the associated experimental results, please cite the corresponding publication.
-
-```bibtex
-@article{mela2026hpcedge,
-  title   = {Optimizing the HPC-to-Edge Continuum: The Role of First-Order Optimizers in Green AI Training and Real-Time Deep Learning Inference},
-  author  = {Mela, Jose Luis and Garcia, Carlos and Cedeño Herrera, Edwin},
-  year    = {2026}
-}
-```
-
-The final bibliographic information should be updated once the publication is formally accepted and assigned its definitive journal metadata.

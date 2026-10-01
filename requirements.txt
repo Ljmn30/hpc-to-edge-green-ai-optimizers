@@ -1,0 +1,8 @@
+# Core Frameworks & Ultralytics
+torch==2.6.0
+ultralytics==8.3.89
+
+# Export and Inference Dependencies in Continuum (ONNX / TensorRT)
+onnx>=1.14.0
+onnxruntime>=1.15.0
+tensorrt==10.1.0
