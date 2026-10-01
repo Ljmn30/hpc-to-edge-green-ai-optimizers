@@ -40,9 +40,6 @@ The overall experimental workflow includes dataset preparation, optimizer-based 
 
 <img src="figure/workflow_1.png" alt="bench 1" width="100%">
 
-Suggested caption:
-
-> *Experimental workflow from dataset preparation and HPC training to statistical analysis and edge deployment.*
 
 ---
 
@@ -74,9 +71,7 @@ The preprocessing pipeline included auto-orientation, resizing, class modificati
 
 ### Dataset class distribution
 
-**Figure placeholder:** `FIGURE_02_DATASET_CLASS_DISTRIBUTION.png`
-
-Suggested caption:
+<img src="figure/datasplitannotations.jpg" alt="bench 2" width="100%">
 
 > *Distribution of object annotations across the nine maritime classes in the Datasense@CRAS dataset.*
 
@@ -174,13 +169,14 @@ The experimental design contains:
 yolo detect train \
     data=/path/to/data.yaml \
     model=yolov8n.pt \
-    epochs=500 \
+    epochs=200 \
     imgsz=640 \
+    batch=16 \ 
+    optimizer=SGD \
+    lr0=0.01 \
     plots=True \
     save=True
 ```
-
-Adapt the command to the exact training configuration used in the repository.
 
 ---
 
@@ -198,17 +194,13 @@ For the fixed YOLOv8n training experiment, the reported performance was:
 
 ### Optimizer performance
 
-**Figure placeholder:** `FIGURE_03_OPTIMIZER_PERFORMANCE.png`
-
-Suggested caption:
+<img src="figure/Alloptimizer.png" alt="bench 3" width="100%">
 
 > *Object detection performance of YOLOv8n models trained with the five evaluated optimizers.*
 
 ### Loss evolution
 
-**Figure placeholder:** `FIGURE_04_LOSS_CURVES.png`
-
-Suggested caption:
+<img src="figure/EpochVSloss.png" alt="bench 4" width="100%">
 
 > *Evolution of the loss function during training for the evaluated optimization algorithms.*
 
