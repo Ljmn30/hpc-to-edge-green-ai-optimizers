@@ -238,13 +238,16 @@ Energy consumption was estimated from the nominal GPU thermal design power (TDP)
 The primary Green AI efficiency indicator is:
 
 ```math
-\eta_{\mathrm{GreenAI}}
+\mathrm{mAP}_{50}^{\mathrm{GPU\text{-}hour}}
 =
-\frac{\mathrm{mAP50}}{E}
-\quad
-\left[
-\frac{\mathrm{mAP50}}{\mathrm{kWh}}
-\right]
+\frac{\mathrm{mAP}_{50}}
+{T_{\mathrm{train}}}
+```
+
+```math
+\mathrm{mAP}_{50}^{\mathrm{kWh}}
+=
+\frac{\mathrm{mAP}_{50}}{E}
 ```
 
 where \(E\) is the estimated energy expenditure in kWh.
